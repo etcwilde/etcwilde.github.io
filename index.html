@@ -3,6 +3,16 @@ layout: default
 title: Evan Wilde
 ---
 
-<div>
-    <h1>Hello World</h1>
+<div class="posts">
+    {% for post in site.posts %}
+    <article class="post">
+        <h1><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></h1>
+
+        <div class="entry">
+            {{ post.content | truncatewords:45}}
+        </div>
+
+        <a href="{{ post.url }}" target="_blank" class="read-more">Read More</a>
+    </article>
+    {% endfor %}
 </div>
