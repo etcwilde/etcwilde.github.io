@@ -1,2 +1,7 @@
 theme: minima
 description: My thoughts, projects, and research
+
+collections:
+  renders:
+    output: true
+    permalink: /renders/:path/
