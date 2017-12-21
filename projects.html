@@ -1,0 +1,23 @@
+---
+title: Projects
+layout: page
+---
+
+
+<ul class="post-list">
+    {% assign project_posts = site.posts |where: "project", true %}
+    {% for post in project_posts %}
+    <li>
+        {% assign date_fmt = "%b %-d, %Y" %}
+        <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><span class="post-meta">{{ post.date | date: date_fmt }}</span></h2>
+
+        <div class="entry">
+            {{ post.content | truncatewords: 45 }}
+        </div>
+
+        <div>
+            <a href="{{ post.url | relative_url }}">Read More</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

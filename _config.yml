@@ -1,6 +1,2 @@
-theme: jekyll-theme-cayman
-description: My thoughts and research
-
-footer-links:
-  github: etcwilde
-  twitter: etcwilde
+theme: minima
+description: My thoughts, projects, and research
