@@ -4,9 +4,11 @@ layout: page
 ---
 
 <ul class="post-list">
-   {% for post in site.renders %}
+    {% for post in site.renders %}
     <li>
-        <a href="{{ post.url | relative_url }}" ><img src="{{ post.image }}" alt="{{ post.title }}"/></a>
+        <img src="{{ post.image }}" alt="{{ post.title }}"/>
+        <h3>{{ post.title | escape }}</h3>
+        <h4>{{ post.description | escape }}</h4>
     </li>
     {% endfor %}
 </ul>
