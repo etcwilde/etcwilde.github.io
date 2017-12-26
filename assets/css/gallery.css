@@ -1,0 +1,54 @@
+.gallery {
+	position: relative;
+	width: inherit;
+}
+
+.gallery .gallery-title {
+	color: white;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.8em;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+	transition: opacity 0.4s;
+	cursor: default;
+}
+
+.gallery:hover .gallery-title {
+	display: inherit;
+	opacity: 1;
+}
+
+.gallery .gallery-button {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
+	opacity: 0;
+	transition: opacity 0.4s;
+	cursor: pointer;
+}
+
+.gallery:hover .gallery-button {
+	opacity: 1;
+}
+
+.gallery .gallery-next {
+	position: absolute;
+	right: 10px;
+	top: 40%;
+}
+
+.gallery .gallery-previous {
+	position: absolute;
+	left: 10px;
+	top: 40%;
+}
