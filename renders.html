@@ -1,13 +1,35 @@
 ---
+# vim:set et sw=2 ts=2 tw=72:
 title: Renders
 layout: gallery
+renders:
+- JetCar:
+  title: Jet Car
+  path: assets/img/renders/JetCar.png
+- Thunderbird:
+  title: 1957 Ford Thunderbird
+  path: assets/img/renders/57Tbird.png
+- Jacks:
+  title: Jacks
+  path: assets/img/renders/jacks.png
+  description: A set of jacks modeled with my implicit system.
+- AsusLogo:
+  title: Asus Logo
+  path: assets/img/renders/AsusLogo.png
+- Crystals:
+  title: Crystals
+  path: assets/img/renders/Crystals.png
+- GrandPiano:
+  title: Grand Piano
+  path: assets/img/renders/GrandPiano.png
 ---
 
 <ul class="gallery post-list">
-    {% for post in site.renders %}
-    <li>
-        <img src="{{ post.image | absolute_url }}" alt="{{ post.title | escape}}"/>
-        <h3>{{ post.title | escape }}</h3>
-    </li>
-    {% endfor %}
+  {% for render in page.renders %}
+  <li>
+    <img src="{{ render.path | absolute_url }}" alt="{{ render.title }}" />
+    <h3>{{ render.title }}</h3>
+    <p>{{render.description}}</p>
+  </li>
+  {% endfor %}
 </ul>
