@@ -1,5 +1,5 @@
 ---
-title: Perf - Perfect Profiling of C/C++ on Linux
+title: Perf - Profiling C/C++ on Linux
 description: Looking at profiling on Linux
 tags: profiling, linux, CPP, C
 ---
