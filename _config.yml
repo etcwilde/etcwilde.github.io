@@ -1,7 +1,11 @@
 theme: minima
 description: My thoughts, projects, and research
+title: Evan Wilde
+show_excerpts: true
+github_username: etcwilde
+linkedin_username: etcwilde
 
-collections:
-  renders:
-    output: true
-    permalink: /renders/:path/
+header_pages:
+  - about.html
+  - experience.html
+  - renders.html
