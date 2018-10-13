@@ -1,18 +1,5 @@
 /* vim:set noet sw=4 ts=4 tw=72: */
 
-/** Blockquotes */
-/* blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; } */
-/* blockquote > :last-child { margin-bottom: 0; } */
-
-
-
-/** Icons */
-/* .icon > svg { display: inline-block; vertical-align: middle; } */
-/* .icon > svg path { fill: #828282; } */
-
-/* .social-media-list .icon { padding-right: 5px; } */
-/* .social-media-list li + li { padding-top: 5px; } */
-
 /** Site header */
 .site-header {
 	border-top: 1px solid #424242;
