@@ -2,8 +2,6 @@ theme: minima
 description: My thoughts, projects, and research
 title: Evan Wilde
 show_excerpts: true
-github_username: etcwilde
-linkedin_username: etcwilde
 
 header_pages:
   - about.html
