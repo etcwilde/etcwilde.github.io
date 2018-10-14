@@ -83,6 +83,62 @@ ul, ol { margin-left: 30px }
 
 li > ul, li > ol { margin-bottom: 0; }
 
+/** Tables */
+
+table
+{
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-color: grey;
+}
+
+thead
+{
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr
+{
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.post table
+{
+	margin-top: 0;
+	margin-bottom: 16px;
+	display: block;
+	width:100%;
+	overflow: auto;
+}
+
+.post table tr
+{
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+
+.post table tr:nth-child(2n)
+{
+	background-color: #f6f8fa;
+}
+
+.post table th
+{
+	font-weight: 600;
+}
+
+.post table th,
+.post table td
+{
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+
 /** Links */
 
 a
