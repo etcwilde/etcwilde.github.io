@@ -27,7 +27,7 @@ renders:
 <ul class="gallery post-list">
   {% for render in page.renders %}
   <li>
-    <img src="{{ render.path | absolute_url }}" alt="{{ render.title }}" />
+    <img src="{{ render.path | relative_url }}" alt="{{ render.title }}" />
     <h3>{{ render.title }}</h3>
     <p>{{render.description}}</p>
   </li>
