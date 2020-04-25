@@ -6,4 +6,5 @@ show_excerpts: true
 header_pages:
   - about.html
   - experience.html
+  - papers.html
   - renders.html
