@@ -73,10 +73,39 @@ var presentGallery = function(Gallery, callback) {
     }
 
     if (Gallery._images.length > 1) {
-        var nextButtonNode = document.createElement("div");
-        var prevButtonNode = document.createElement("div");
-        nextButtonNode.appendChild(document.createTextNode(">"));
-        prevButtonNode.appendChild(document.createTextNode("<"));
+        var nextButtonNode = document.createElement("button");
+        nextButtonNode.style.border = 0;
+        nextButtonNode.setAttribute("aria-label", "next")
+        var prevButtonNode = document.createElement("button");
+        prevButtonNode.style.border = 0;
+        prevButtonNode.setAttribute("aria-label", "previous")
+
+        var nextChevronSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        nextChevronSVG.setAttributeNS(null, "width", "16");
+        nextChevronSVG.setAttributeNS(null, "height", "16");
+        nextChevronSVG.setAttributeNS(null, "fill", "white");
+        nextChevronSVG.setAttributeNS(null, "viewBox", "0 0 16 16");
+        nextChevronSVG.setAttributeNS(null, "class", "ui ui-chevron-right");
+
+        var nextChevronPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        nextChevronPath.setAttributeNS(null, "fill-rule", "evenodd");
+        nextChevronPath.setAttributeNS(null, 'd', "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z");
+        nextChevronSVG.appendChild(nextChevronPath);
+
+        var prevChevronSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        prevChevronSVG.setAttributeNS(null, "width", "16");
+        prevChevronSVG.setAttributeNS(null, "height", "16");
+        prevChevronSVG.setAttributeNS(null, "fill", "white");
+        prevChevronSVG.setAttributeNS(null, "viewBox", "0 0 16 16");
+        prevChevronSVG.setAttributeNS(null, "class", "ui ui-chevron-left");
+
+        var prevChevronPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        prevChevronPath.setAttributeNS(null, "fill-rule", "evenodd");
+        prevChevronPath.setAttributeNS(null, 'd', "M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z");
+        prevChevronSVG.appendChild(prevChevronPath);
+
+        nextButtonNode.appendChild(nextChevronSVG);
+        prevButtonNode.appendChild(prevChevronSVG);
 
         nextButtonNode.className = "gallery-button gallery-next";
         prevButtonNode.className = "gallery-button gallery-previous";
