@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 
 body
 {
-	font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 400 16px/1.5 Helvetica, Arial, sans-serif;
 	color: #111;
 	background-color: #fdfdfd;
 	-webkit-text-size-adjust: 100%;
@@ -24,31 +24,31 @@ h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 h1
 {
-	font: 530 32pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 530 32pt Helvetica, Arial, sans-serif;
 	color: #1f4e79;
 }
 
 h2
 {
-	font: 500 24pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 500 24pt Helvetica, Arial, sans-serif;
 	color: #2e74b5;
 }
 
 h3
 {
-	font: 400 20pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 400 20pt Helvetica, Arial, sans-serif;
 	color: #3a89da;
 }
 
 @media screen and (max-width: 800px) {
 	h1
 	{
-		font: 400 24pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font: 400 24pt Helvetica, Arial, sans-serif;
 	}
 
 	h2
 	{
-		font: 400 16pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font: 400 16pt Helvetica, Arial, sans-serif;
 	}
 }
 
@@ -56,7 +56,7 @@ h3
 
 .lighten
 {
-	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 15px Helvetica, Arial, sans-serif;
 	color: #666;
 }
 
