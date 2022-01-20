@@ -127,8 +127,26 @@ let elements = Array.prototype.slice.call(document.getElementsByClassName('galle
 apply(elements, function(gallery, i){
     galleryMap.set(gallery, new Gallery());
     extractImages(gallery, function(images) { apply(images, function(image) { galleryMap.get(gallery).add(image);})});
-    presentGallery(galleryMap.get(gallery), function(present) {
+
+    let resetGallery = function(gallery, presentation) {
         gallery.innerHTML = '';
-        gallery.appendChild(present);
+        gallery.appendChild(presentation);
+    }
+
+    presentGallery(galleryMap.get(gallery), function(present) {
+        resetGallery(gallery, present);
+    });
+
+    window.addEventListener('keydown', function(e) {
+        var selectedGallery = galleryMap.get(gallery);
+        e = e || window.event;
+        if (e.keyCode === 39) {
+            selectedGallery.next();
+        } else if (e.keyCode === 37) {
+            selectedGallery.previous();
+        }
+        presentGallery(selectedGallery, function(present) {
+            resetGallery(gallery, present);
+        });
     });
 });
