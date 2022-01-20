@@ -157,6 +157,16 @@
 
 .post-link { display: block; font-size: 24px; }
 
+img#headshot {
+	border-radius: 50%;
+	border: 5px solid white;
+	box-shadow: 0 0 18px darkgrey;
+	width: 128px;
+	height: 128px;
+	float:	 right;
+	margin: 1em 0.60em;
+}
+
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
