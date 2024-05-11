@@ -16,9 +16,12 @@ layout: page
     </div>
 
     <p>
-    Worked on adding new language features to Swift, including the new
-    concurrency model. I focused on improving the warning and error
-    diagnostics emitted by the compiler.
+    Worked on the Swift compiler team, helping implement several
+    language features including parts of the Swift concurrency model.
+    Also worked with other teams, helping them write new performant and
+    maintainable Swift code, while integrating it with their existing
+    codebases written in several languages. I've made several
+    contributions to CMake, improving support for Swift.
     </p>
 
     <div class="columns-3">
@@ -43,7 +46,12 @@ layout: page
     </div>
 
     <p>
-    Worked on the Clang frontend and LLVM optimizer to help it make better decisions about how code should be optimized, and to take advantage of various features of the hardware. During this internship, I had the opportunity to present my work to the Vice President of MacOS platform experience, Andreas Wendker, and the Senior Vice President of Software Engineering, Craig Federighi.
+    Worked on the Clang frontend and LLVM optimizer to help it make
+    better decisions about how code should be optimized, and to take
+    advantage of various features of the hardware. During this
+    internship, I had the opportunity to present my work to the Vice
+    President of MacOS platform experience, Andreas Wendker, and the
+    Senior Vice President of Software Engineering, Craig Federighi.
     </p>
 
 </div>
@@ -114,13 +122,35 @@ layout: page
     </div>
 
     <p>
-    My coursework included machine learning, data mining, linear programming, and music information retrieval.
-    The focus of my thesis was on designing a model to summarize how commits are integrated into a git repository, specifically for the Linux kernel. This work included designing the model, developing an algorithm to construct the model from the commit graph, constructing a tool called Linvis, and performing a user study to evaluate whether the technique achieved the goal.
-    My research focus was in the area of software engineering practices,
-    with the intentions of understanding why programmers make the
-         decisions they do while writing software, determining which
-         decisions result in higher quality code, all while making the
-         task of writing software easier.
+    My coursework included machine learning, data mining, linear
+    programming, and music information retrieval. The focus of my thesis
+    was on designing a model to summarize how commits are integrated
+    into a git repository, specifically for the Linux kernel. This work
+    included designing the model, developing an algorithm to construct
+    the model from the commit graph, constructing a tool called Linvis,
+    and performing a user study to evaluate whether the technique
+    achieved the goal.
+    </p>
+
+    <p>
+    My thesis focused on visualizing the Linux kernel repository, which
+    has more than 8,000 commits per release. Commits are merged into
+    various subcomponents of the kernel before eventually merging into
+    the mainline kernel release. The challenge is for maintainers of the
+    kernel to understand what is merged in a given release so that they
+    can apply the changes back to older versions for security updates.
+    The key was to reverse the edges of the git directed acyclic graph
+    and construct trees with edges pointing from a commit toward the
+    merge that eventually led to including the commit in the master
+    branch of the repository. I designed an algorithm to construct these
+    tress and analyzed the resulting trees to verify that they reflected
+    what was in the repository. Then I wrote a web-based tool to
+    visualize the merge-trees and conducted a user-study to validate the
+    claim that the tree visualization helped understand how a given
+    commit was merged into the repository, and which commits were merged
+    with it.
+    </p>
+
     Thesis:&nbsp;<a href="https://dspace.library.uvic.ca/handle/1828/10053" target=_blank>https://dspace.library.uvic.ca/handle/1828/10053</a>
     </p>
 
@@ -136,8 +166,12 @@ layout: page
     </div>
 
     <p>
-    Received my bachelors of computer science, having taken a wide variety of courses including; artificial intelligence, computer graphics, computational geometry, compiler construction, database design, computer networking, and security engineering.
-    My honors project was in computer graphics, where I implemented the Blob tree, a structure to represent the interactions of implicit surfaces.
+    Received my Bachelor of Science, in computer science, having taken a
+    wide variety of courses including; artificial intelligence, computer
+    graphics, computational geometry, compiler construction, database
+    design, computer networking, and security engineering. My honors
+    project was in computer graphics, where I implemented the Blob tree,
+    a structure to represent the interactions of implicit surfaces.
     </p>
 
 </div>
