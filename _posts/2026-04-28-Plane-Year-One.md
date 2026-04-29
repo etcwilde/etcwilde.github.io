@@ -1,5 +1,5 @@
 ---
-title: Plane ownership, year one
+title: Plane Ownership, Year One
 ---
 
 ![Flying over the clouds]({{ "assets/img/posts/2026-04-28-Plane-Year-One/OverTheClouds.jpeg" | absolute_url }})
@@ -19,7 +19,7 @@ that later.
 All told, I flew 49 flights and accrued 60 hours of flight time. I hit both my
 150th and 200th flight hour.
 
-## Airports visited
+## Airports Visited
 
 I visited several airports this year
 
@@ -157,7 +157,7 @@ the plane was in good condition, but guess what failed the inspection? The
 magneto! It literally had 0.4 hours of operation on it since the overhaul, so we
 sent it back. Hopefully it works this time.
 
-## In the end
+## In The End
 
 This is my busy season at work, so luckily I haven't really missed out on much
 flying, and we still have a bit of time to get the magneto situation figured
