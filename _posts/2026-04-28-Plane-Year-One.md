@@ -169,3 +169,10 @@ back seats, unlike the 172. Hopefully we're out of the weeds here soon and can
 get back up in the sky.
 
 ![View of Apple Park]({{ "assets/img/posts/2026-04-28-Plane-Year-One/Cupertino.jpeg" | absolute_url }})
+
+Edit: My annual finished up on May 1st. Re-timing the re-overhauled magneto
+seems to have resolved the power issues with the engine, and the cylinder head
+temperature issues on the #2 and #3 cylinders. The annual came out to just under
+$6k, which is a lot better than I was anticipating. I noticed they also fixed a
+missing rivet on my left flap and replaced a missing screw in the tail cone
+assembly.
