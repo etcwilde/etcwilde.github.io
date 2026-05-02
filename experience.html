@@ -176,6 +176,84 @@ layout: page
 
 </div>
 
+<h2>Conference Talks</h2>
+
+<div>
+    <h3>Dancing with Daemons: Porting Swift to FreeBSD</h3>
+
+    <div class="columns-2">
+        <span class="lighten">FOSDEM</span>
+        <span class="lighten">2026</span>
+    </div>
+
+    <p>
+
+    Michael Chiu and I present on the worked involved in porting Swift
+    to run on FreeBSD. This talked about the bootstrapping process,
+    iterating on getting things built, tools we used when debugging, and
+    some of the more interesting bugs this effort pulled up.
+
+    </p>
+
+    <a href="https://fosdem.org/2026/schedule/event/YTBHYC-swift-on-freebsd/" />link</a>
+</div>
+
+<div>
+    <h3>Beyond the Basics of Structured Concurrency</h3>
+
+    <div class="columns-2">
+        <span class="lighten">WWDC</span>
+        <span class="lighten">2023</span>
+    </div>
+
+    <p>
+
+    I present more advanced ways of using structured concurrency in
+    Swift. This includes details on how to think about the structure of
+    structured tasks, how that ties in with task cancellation and task
+    priority propagation. I also talk about techniques for using task
+    groups to regulate the number of parallel tasks launched, and
+    introduce the new discarding task group. I also cover task local
+    variables and how to use them with libraries like Swift-Log to
+    propagate information throughout the task hierarchy.
+
+    </p>
+
+    <a href="https://developer.apple.com/videos/play/wwdc2023/10170/" />link</a>
+</div>
+
+<div>
+
+    <h3>Merge-Tree: Visualizing the Integration of Commits Into Linux</h3>
+
+    <div class="columns-2">
+        <span class="lighten">VISSOFT</span>
+        <span class="lighten">2016</span>
+    </div>
+
+    <p>
+
+    I present the initial research in developing a model for
+    representing how commits are merged into a Git repository. Git makes
+    it easy to find which commits are in the history of a given commit,
+    but it is much harder to figure out how a given commit landed on a
+    given branch, which merges it was a part of, and the other commits
+    that were merged with it.
+    This model reverses the edges of the DAG, pointing from a commit
+    toward the nearest merge, making it clear how a given commit was
+    integrated into a release of the kernel.
+
+    </p>
+
+    <p>
+
+    Unfortunately there was a technical issue with the recording
+    equipment, so there is no recording of it available.
+
+    </p>
+
+</div>
+
 <h2>Papers Published</h2>
 
 <div>
